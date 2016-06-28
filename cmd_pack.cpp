@@ -2,7 +2,7 @@
 #include "cmd_pack.h"
 
 
-uint16_t make_opcode(uint16_t ogf, uint16_t ocf) {
+static uint16_t make_opcode(uint16_t ogf, uint16_t ocf) {
 
     uint16_t opcode = 0x000000;
 
