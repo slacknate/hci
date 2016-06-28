@@ -3,6 +3,7 @@
 
 #include <cstdint>
 #include <cstdlib>
+#include "acl_data_defs.h"
 
 struct hci_acl_data_packet {
 
