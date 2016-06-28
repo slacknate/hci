@@ -9,7 +9,7 @@ struct hci_cmd_packet {
 
     uint16_t opcode;
     uint8_t  size;
-    uint8_t  *data;
+    uint8_t  data[];
 };
 
 const size_t cmd_packet_size = sizeof(struct hci_cmd_packet);

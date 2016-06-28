@@ -9,7 +9,7 @@ struct hci_acl_data_packet {
 
     uint16_t hnd_and_flags;
     uint16_t size;
-    uint8_t  *data;
+    uint8_t  data[];
 };
 
 const size_t acl_data_packet_size = sizeof(struct hci_acl_data_packet);
