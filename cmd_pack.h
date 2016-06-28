@@ -2,6 +2,7 @@
 #define HCI_CMD_PACK_H
 
 #include <cstdint>
+#include <cstdlib>
 #include "cmd_defs.h"
 
 struct hci_cmd_packet {
