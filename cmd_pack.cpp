@@ -25,7 +25,7 @@ uint16_t make_opcode(uint16_t ogf, uint16_t ocf) {
 struct hci_cmd_packet *make_cmd_packet(uint16_t ogf, uint16_t ocf, uint8_t size) {
 
     uint8_t *data = (uint8_t *)malloc(sizeof(uint8_t) * size);
-    struct hci_cmd_packet *packet = (struct hci_cmd_packet *)malloc(sizeof(struct hci_cmd_packet));
+    struct hci_cmd_packet *packet = (struct hci_cmd_packet *)malloc(cmd_packet_size);
 
     if(data == nullptr && packet != nullptr) {
 
