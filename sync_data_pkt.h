@@ -3,7 +3,14 @@
 
 #include <cstdint>
 #include <cstdlib>
-#include "sync_data_defs.h"
+
+/*
+ * TODO: give these real names?
+ */
+const uint8_t PKT_STATUS_0 = 0x00;
+const uint8_t PKT_STATUS_1 = 0x01;
+const uint8_t PKT_STATUS_2 = 0x02;
+const uint8_t PKT_STATUS_3 = 0x03;
 
 struct hci_sync_data_pkt {
 
