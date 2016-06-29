@@ -10,6 +10,7 @@ set(SOURCE_FILES
     cmd_pkt.cpp cmd_pkt.h cmd_defs.h
     acl_data_pkt.cpp acl_data_pkt.h acl_data_defs.h
     sync_data_pkt.cpp sync_data_pkt.h sync_data_defs.h
+    evt_pkt.cpp evt_pkt.h
 )
 
 add_executable(hci ${SOURCE_FILES})
