@@ -1,14 +1,14 @@
 #include <cstring>
-#include "acl_data_pack.h"
+#include "sync_data_pkt.h"
 
 
 static uint16_t make_hnd_and_flags(uint16_t handle, uint8_t flags) {
 
     uint16_t hnd_and_flags = 0x000000;
 
-    if(handle <= 0x0FFF && flags <= 0x0F) {
+    if(handle <= 0x0FFF && flags <= 0x03) {
 
-        hnd_and_flags = (handle << 4) | flags;
+        hnd_and_flags = (handle << 4) | (flags << 2);
     }
     else {
 
@@ -21,9 +21,9 @@ static uint16_t make_hnd_and_flags(uint16_t handle, uint8_t flags) {
 }
 
 
-struct hci_acl_data_pkt *make_acl_data_pkt(uint16_t handle, uint8_t flags, uint16_t size) {
+struct hci_sync_data_pkt *make_sync_data_pkt(uint16_t handle, uint8_t flags, uint8_t size) {
 
-    struct hci_acl_data_pkt *pkt = (struct hci_acl_data_pkt *)malloc(acl_data_pkt_size + size);
+    struct hci_sync_data_pkt *pkt = (struct hci_sync_data_pkt *)malloc(sync_data_pkt_size + size);
 
     if(pkt != nullptr) {
 
@@ -37,7 +37,7 @@ struct hci_acl_data_pkt *make_acl_data_pkt(uint16_t handle, uint8_t flags, uint1
 }
 
 
-void destroy_acl_data_pkt(struct hci_acl_data_pkt *pkt) {
+void destroy_sync_data_pkt(struct hci_sync_data_pkt *pkt) {
 
     free(pkt);
 }
