@@ -4,6 +4,8 @@
 #include <cstdint>
 #include <cstdlib>
 
+const uint8_t EVT_CODE_VND = 0xFF;
+
 struct hci_evt_pkt {
 
     uint8_t evt_code;
