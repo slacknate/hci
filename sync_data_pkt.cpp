@@ -35,9 +35,3 @@ struct hci_sync_data_pkt *make_sync_data_pkt(uint16_t handle, uint8_t flags, uin
 
     return pkt;
 }
-
-
-void destroy_sync_data_pkt(struct hci_sync_data_pkt *pkt) {
-
-    free(pkt);
-}

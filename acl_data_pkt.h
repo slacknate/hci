@@ -15,6 +15,5 @@ struct hci_acl_data_pkt {
 const size_t acl_data_pkt_size = sizeof(struct hci_acl_data_pkt);
 
 struct hci_acl_data_pkt *make_acl_data_pkt(uint16_t handle, uint8_t flags, uint16_t size);
-void destroy_acl_data_pkt(struct hci_acl_data_pkt *pkt);
 
 #endif //HCI_ACL_DATA_PACK_H

@@ -35,9 +35,3 @@ struct hci_acl_data_pkt *make_acl_data_pkt(uint16_t handle, uint8_t flags, uint1
 
     return pkt;
 }
-
-
-void destroy_acl_data_pkt(struct hci_acl_data_pkt *pkt) {
-
-    free(pkt);
-}

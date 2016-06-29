@@ -15,6 +15,5 @@ struct hci_cmd_pkt {
 const size_t cmd_pkt_size = sizeof(struct hci_cmd_pkt);
 
 struct hci_cmd_pkt *make_cmd_pkt(uint16_t ogf, uint16_t ocf, uint8_t size);
-void destroy_cmd_pkt(struct hci_cmd_pkt *pkt);
 
 #endif //HCI_CMD_PACK_H

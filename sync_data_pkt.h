@@ -15,6 +15,5 @@ struct hci_sync_data_pkt {
 const size_t sync_data_pkt_size = sizeof(struct hci_sync_data_pkt);
 
 struct hci_sync_data_pkt *make_sync_data_pkt(uint16_t handle, uint8_t flags, uint16_t size);
-void destroy_sync_data_pkt(struct hci_sync_data_pkt *pkt);
 
 #endif //HCI_SYNC_DATA_PACK_H
