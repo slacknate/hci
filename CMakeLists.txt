@@ -7,9 +7,9 @@ set(SOURCE_FILES
 
     main.cpp
 
-    cmd_pkt.cpp cmd_pkt.h cmd_defs.h
-    acl_data_pkt.cpp acl_data_pkt.h acl_data_defs.h
-    sync_data_pkt.cpp sync_data_pkt.h sync_data_defs.h
+    cmd_pkt.cpp cmd_pkt.h
+    acl_data_pkt.cpp acl_data_pkt.h
+    sync_data_pkt.cpp sync_data_pkt.h
     evt_pkt.cpp evt_pkt.h
 )
 
